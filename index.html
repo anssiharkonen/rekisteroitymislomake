@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröitymislomake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <form id="registerForm">
+        Käyttäjä ID: <input type="text" id="userId"> <span class="error" id="userIdError"></span><br>
+        Salasana: <input type="password" id="password"> <span class="error" id="passwordError"></span><br>
+        Nimi: <input type="text" id="name"> <span class="error" id="nameError"></span><br>
+        Osoite: <input type="text" id="address"> <span class="error" id="addressError"></span><br>
+        Maa: <select id="country"><option value="">Valitse maa</option></select> <span class="error" id="countryError"></span><br>
+        Postinumero: <input type="text" id="postalCode"> <span class="error" id="postalCodeError"></span><br>
+        Sähköposti: <input type="text" id="email"> <span class="error" id="emailError"></span><br>
+        Sukupuoli: <input type="radio" name="gender" value="Mies"> Mies
+                  <input type="radio" name="gender" value="Nainen"> Nainen
+        <span class="error" id="genderError"></span><br>
+        Kieli: <input type="checkbox" checked> Suomi <input type="checkbox"> Muu kuin suomi<br>
+        Lisätietoja: <textarea id="extraInfo"></textarea><br>
+        <button type="submit">Lähetä</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
